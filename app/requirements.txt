@@ -1,0 +1,46 @@
+anyio @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/3f/23/12/e4075536a32f8686131d4a5ef7ec809982e5ac8e56e7f204b73463af93/anyio-3.6.1-py3-none-any.whl
+asgiref @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/06/c5/92/fde9b737e4cdbbb4c1ca99aa783a38a67c15b0c5fe987f8b76550cff6a/asgiref-3.5.2-py3-none-any.whl
+attrs @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/8a/20/d8/49f3d5f26513035af1c50bc2e32038c9e94776088f23ef7b12a2629c76/attrs-21.4.0-py2.py3-none-any.whl
+autoflake @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/9d/24/17/f9f63f38e03bfe77e8317931c05d25a70a09f9107d53268ce168c44d13/autoflake-1.4.tar.gz
+black @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/69/31/f9/a59c59bad8bb0e7597aea9dab4e805f1596f86e6dffd6487db675cee9f/black-22.3.0-cp37-cp37m-macosx_10_9_x86_64.whl
+certifi==2022.5.18.1
+charset-normalizer==2.0.12
+click @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/c2/a5/d3/81787ecaf4e891c2b00c47bdfbea32cd9da157e1090d034f9394aeb8d6/click-8.1.3-py3-none-any.whl
+fastapi @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/2d/e6/ea/ccbe804858316df1e5b5800724dc299a9395f927a82ef31facbe1cfdad/fastapi-0.78.0-py3-none-any.whl
+flake8 @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/32/58/e3/42f4c43e9c357759cc65ddafa0873dae0d6569aa974f86da2d7780c133/flake8-4.0.1-py2.py3-none-any.whl
+gevent==21.12.0
+greenlet @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/a7/d2/3c/3184086ea1c06c991ad7645876f8652ae099375de548495f18812e37b6/greenlet-1.1.2-cp37-cp37m-macosx_10_14_x86_64.whl
+grequests==0.6.0
+h11 @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/b8/8c/06/28c9faeb0905627626c23ba3d6912a3be490d7eafd402d697521893889/h11-0.13.0-py3-none-any.whl
+idna @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/d1/29/f1/812f74c0208a13cc843f388f1ef3ae38195e26f2bb7e4f065f91a83a65/idna-3.3-py3-none-any.whl
+importlib-metadata @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/17/0e/e0/788237abec59366292c39dc984f23f266e0d44392667220e158372af2a/importlib_metadata-4.2.0-py3-none-any.whl
+isort @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/fd/db/db/dcd8c12c0cf3b15c0e53449d6a1890c469215961e8bf56f5ac5fd019b0/isort-5.10.1-py3-none-any.whl
+mccabe @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/c2/cd/ed/3c4495a1422fb12eefbca8b3c6ccc83ab4ec92fd39df029199cc4f4ee4/mccabe-0.6.1-py2.py3-none-any.whl
+more-itertools @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/89/04/ed/14bfe05894122d710c33996446f30d6fdebe731d14323b477fbcc74fbb/more_itertools-8.13.0-py3-none-any.whl
+mypy @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/07/c3/99/e77aa2bbdb983f2f51b7bbdc3ade120d135fb124d808ca1d88f6635683/mypy-0.960-cp37-cp37m-macosx_10_9_x86_64.whl
+mypy-extensions @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/41/fb/ef/133cd18a3e22a06b8d77dfe2ba71c50c509e4d2484ee619c6631c0b5b2/mypy_extensions-0.4.3-py2.py3-none-any.whl
+packaging @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/e7/69/d8/c898ce544c13176aff1086ce98482795d26eba3a19ba8b061818e93f71/packaging-21.3-py3-none-any.whl
+pathspec @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/e2/1c/f0/be9f6d96592b92339d4f269d62876cf2202b36d0dd8ca3c7542dd34a5f/pathspec-0.9.0-py2.py3-none-any.whl
+platformdirs @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/50/e3/96/0d976784a456861ec80f7a8d705f7bbea6c0374e28a43f14b5b7d16f95/platformdirs-2.5.2-py3-none-any.whl
+pluggy @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/bc/2e/c9/c04063460a7a68d2e59c9ea0a673de9d7930d54f788ed0510cdcf8aa78/pluggy-0.13.1-py2.py3-none-any.whl
+psycopg2-binary @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/85/78/b3/c36b28391f444d589757e30f9ad53eabe20c46630f5f306087a7475040/psycopg2_binary-2.9.3-cp37-cp37m-macosx_10_14_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl
+py @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/77/d8/b6/ed4363fe675755db81377dcfd5156902eb663233f55f9931c01ec8c653/py-1.11.0-py2.py3-none-any.whl
+pycodestyle @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/88/47/30/f5061f07f459dce75baab82fb252f1a43355365e0ebbc3dbb6823bcc7d/pycodestyle-2.8.0-py2.py3-none-any.whl
+pydantic @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/87/d7/dd/52448c28b3c0f5ed80815b8cf4d97be7ffb38f2d4db4bff32443dc06bb/pydantic-1.9.1-cp37-cp37m-macosx_10_9_x86_64.whl
+pyflakes @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/cf/27/65/8d5200de7619c9cc3e8137dc5b0fe3f9cdc8b68608cbf3e6b52f232960/pyflakes-2.4.0-py2.py3-none-any.whl
+pyparsing @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/db/75/c9/c163dd2ceb571876fee95c21e0051c804d9df2dd6e986c0e478dee7d11/pyparsing-3.0.9-py3-none-any.whl
+pytest @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/a8/5a/78/7536a0da5c14b85637968b588ecf3bde096ce084658eab4180c94412fa/pytest-5.4.3-py3-none-any.whl
+requests==2.27.1
+sniffio @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/b9/dd/a5/83174b936f8c8a9706b022caff72ba4d3c573a1946843e5390a46c0f11/sniffio-1.2.0-py3-none-any.whl
+SQLAlchemy @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/25/3f/0f/ee7eeb9984b4f9769c0ec90e7fec41e3fa6eab50e47b5991b9c2506b67/SQLAlchemy-1.4.37-cp37-cp37m-macosx_10_15_x86_64.whl
+sqlalchemy-stubs @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/45/10/30/38c200f5c85aba5a45c3ee75e426efed29bcd0296b1273baf8fe8f0555/sqlalchemy_stubs-0.4-py3-none-any.whl
+starlette @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/0d/b6/77/14e22d4696134d5f4d386a079f38334328a76ebfdd4ad58c79a956702b/starlette-0.19.1-py3-none-any.whl
+tomli @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/96/e9/69/39fd885c95a3ab1bfebbe4e7c9d590081a54cba67cccb9b413e31d1d32/tomli-2.0.1-py3-none-any.whl
+typed-ast @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/09/b8/a4/ca02bb5f23bec5246e2b8672c314663e2d0d67716ee7b125622fc8a3f0/typed_ast-1.5.4-cp37-cp37m-macosx_10_9_x86_64.whl
+typing_extensions @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/6f/97/35/9bface9f6f5257bc221edb56231b244b0701d3e1c7cf8d42eefd27da72/typing_extensions-4.2.0-py3-none-any.whl
+urllib3==1.26.9
+uvicorn @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/1a/bf/bb/0fc6c7892b0ab3a82899c9103ababcc82bc9adc6f9019769c155b5cbe7/uvicorn-0.17.6-py3-none-any.whl
+wcwidth @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/92/12/86/71fde978823bd982c22bd549b0ba688e372403269396c892ac8160f4fe/wcwidth-0.2.5-py2.py3-none-any.whl
+zipp @ file:///Users/eliocamison/Library/Caches/pypoetry/artifacts/58/c6/09/468afc42de64ac023a51a896c5e736016fea6e31befc5524cabf172d98/zipp-3.8.0-py3-none-any.whl
+zope.event==4.5.0
+zope.interface==5.4.0
