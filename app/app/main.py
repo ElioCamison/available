@@ -26,7 +26,7 @@ def get_db():
         db.close()
 
 
-@app.get("/providers/", response_model=List[schemas.Provider])
+@app.get("/api/v1/providers/", response_model=List[schemas.Provider])
 def fetch_providers(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     providers = crud.get_providers(db, skip=skip, limit=limit)
     if len(providers) == 0:
@@ -38,7 +38,7 @@ def fetch_providers(skip: int = 0, limit: int = 100, db: Session = Depends(get_d
 
     return providers
 
-@app.get("/avails/")
+@app.get("/api/v1/avails/")
 async def fetch_avails(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     """
         Primero se obtienen los proveedores. Con las urls de estos se instancian los objetos de rates y options
