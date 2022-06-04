@@ -1,6 +1,7 @@
 # <h1>Challenge</h1>
 
-La prueba consiste en unificar los dos resultados de las diferentes llamadas a las api, obteniendo un único resultado.
+El objetivo es integrar dos proveedores de servicios hoteleros y crear una API que devuelva los datos agrupados.
+Para ello, se han creado 2 rutas públicas que devolverán un JSON estático cada vez que reciban una petición GET
 
 # <h2>Puesta en marcha del proyecto, lanzar los siguientes comandos</h2>
 poetry shell # en caso de no tener instalado poetry https://python-poetry.org/docs/#installation \
