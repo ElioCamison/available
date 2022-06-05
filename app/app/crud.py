@@ -2,6 +2,11 @@ from sqlalchemy.orm import Session
 
 from . import models, schemas
 
+
+# -- ****************************************
+# -- Providers
+# -- ****************************************
+
 def get_provider(db: Session, provider_id: int):
     """
         Devuelve un proveedor en base a su atributo id
@@ -45,6 +50,29 @@ def create_provider(db: Session, provider: schemas.ProviderCreate):
     db.refresh(db_provider)
     return db_provider
 
+# -- ****************************************
+# -- Options
+# -- ****************************************
+
+def get_options(db: Session, skip: int = 0, limit: int = 100):
+    """
+        Devuelve todos las opciones(paquetes) que tiene un proveedor en concreto
+    """
+    return db.query(models.Options).offset(skip).limit(limit).all()
+
+def create_options(db: Session, options: schemas.OptionsCreate):
+    """
+        Crea un paquete de opciones
+    """
+    print(options)
+    db_options = models.Options(hotel_id=options['hotel_id'], 
+                                nights=options['nights'],
+                                night_price=options['night_price'],
+                                provider=options['provider'])
+    db.add(db_options)
+    db.commit()
+    db.refresh(db_options)
+    return db_options
 
 
 # -- CREATE RATES

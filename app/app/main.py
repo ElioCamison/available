@@ -78,6 +78,11 @@ def delete_provider(provider_id: int, db: Session = Depends(get_db)):
     return db_provider
 
 
+# -- Obtiene todos los paquetes opcionales
+@app.get("/api/v1/options/", response_model=List[schemas.Options])
+def fetch_options(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    return crud.get_options(db, skip=skip, limit=limit)
+
 
 # -- Obtiene el listado de disponibilidades
 @app.get("/api/v1/avails/")
@@ -86,7 +91,7 @@ async def fetch_avails(skip: int = 0, limit: int = 100, db: Session = Depends(ge
         Primero se obtienen los proveedores. Con las urls de estos se instancian los objetos de rates y options
         Una vez instanciados estos se crean los hoteles y al final se instancian los avails
 
-        se debería de guardar cada objecto correspondiente
+        Los 
     """
     providers = crud.get_providers(db, skip=skip, limit=limit)
     # Con qrequests se preparan todas las peticiones que tengan los proveedores, en caso de fallar una no impedira
