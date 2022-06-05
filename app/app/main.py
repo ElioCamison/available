@@ -96,41 +96,44 @@ async def fetch_avails(skip: int = 0, limit: int = 100, db: Session = Depends(ge
     # En este punto se lanzan todas las peticiones en paralelo.
     response = grequests.map(rs)
     # TODO - No tiene la estructura correcta
-    result = []
+    result = {'avails':[]}
     for r in response:
-        # El contenido de la respuesta es de tipo byte por tanto hay que parsearlo
-        parse = ast.literal_eval(r.content.decode("UTF-8"))
-        if 'rates' in parse:
-            provider = crud.get_provider_by_url(db,str(r.url))
-            for rate in parse['rates']:
-                result.append(
-                    {
-                        'hotel':rate['hotel'],
-                        'options':[
-                            {
-                                'hotel':rate['hotel'],
-                                'nights': rate['nights'],
-                                'final_price':rate['final_price'],
-                                'provider': provider.code
-                            }
-                        ]
-                    }
-                )
-        elif 'options' in parse:
-            provider = crud.get_provider_by_url(db,str(r.url))
-            for options in parse['options']:
-                result.append(
-                    {
-                        'hotel':int(options['hotel']),
-                        'options':[
-                            {
-                                'hotel':int(options['hotel']),
-                                'nights': options['nights'],
-                                'final_price':options['night_price'] * int(options['nights']),
-                                'provider': provider.code
-                            }
-                        ]
-                    }
-                )
+        # Dado que se pueden agregar proveedores los cuales pueden tener una respuesta que no este contemplada
+        # o su url no devuelve un json, se condiciona para siempre devolver como minino los datos estaticos
+        if r is not None:
+            # El contenido de la respuesta es de tipo byte por tanto hay que parsearlo
+            parse = ast.literal_eval(r.content.decode("UTF-8"))
+            if 'rates' in parse:
+                provider = crud.get_provider_by_url(db,str(r.url))
+                for rate in parse['rates']:
+                    result['avails'].append(
+                        {
+                            'hotel':rate['hotel'],
+                            'options':[
+                                {
+                                    'hotel':rate['hotel'],
+                                    'nights': rate['nights'],
+                                    'final_price':rate['final_price'],
+                                    'provider': provider.code
+                                }
+                            ]
+                        }
+                    )
+            elif 'options' in parse:
+                provider = crud.get_provider_by_url(db,str(r.url))
+                for options in parse['options']:
+                    result['avails'].append(
+                        {
+                            'hotel':int(options['hotel']),
+                            'options':[
+                                {
+                                    'hotel':int(options['hotel']),
+                                    'nights': options['nights'],
+                                    'final_price':options['night_price'] * int(options['nights']),
+                                    'provider': provider.code
+                                }
+                            ]
+                        }
+                    )
 
     return result
