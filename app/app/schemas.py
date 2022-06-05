@@ -11,6 +11,9 @@ class ProviderBase(BaseModel):
 
 
 class ProviderCreate(ProviderBase):
+    """
+        Extiende del modelo base dado que no va a incrementar de atributos por el momento
+    """
     pass
 
 class Provider(ProviderBase):
