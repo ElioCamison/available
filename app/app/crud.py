@@ -25,9 +25,12 @@ def get_providers(db: Session, skip: int = 0, limit: int = 100):
 
 def delete_provider(db: Session, provider_id: int):
     """
-        Devuelve un proveedor en base a su atributo id
+        Borra un proveedor en base a su atributo id
     """
-    return db.query(models.Provider).filter(models.Provider.id == provider_id).delete()
+    
+    db.query(models.Provider).filter(models.Provider.id == provider_id).delete()
+    db.commit()
+    return {"ok": True}
 
 
 def create_provider(db: Session, provider: schemas.ProviderCreate):

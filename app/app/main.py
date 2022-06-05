@@ -33,6 +33,7 @@ def get_db():
 def create_provider(provider: schemas.ProviderCreate, db: Session = Depends(get_db)):
     """
         Ejemplo de la peticion en el collections.
+
     """
     # Si existe algun proveedor con la url del nuevo proveedor, este no se creara y devolvera un error
     db_provider = crud.get_provider_by_url(db,provider.url)
@@ -71,9 +72,10 @@ def fetch_provider(provider_id: int, db: Session = Depends(get_db)):
 @app.delete("/api/v1/providers/{provider_id}", status_code=204)
 def delete_provider(provider_id: int, db: Session = Depends(get_db)):
     db_provider = crud.delete_provider(db, provider_id=provider_id)
+    print(db_provider)
     if db_provider is None:
         raise HTTPException(status_code=404, detail="Proveedor no encontrado")
-    return {'borrado':True}
+    return db_provider
 
 
 
